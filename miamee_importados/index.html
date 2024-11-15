@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <title>Tienda Online</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo-miami.PNG" alt="Logo de la tienda">
+                <h2 class="nombre-empresa">TIENDA MIAMEEE</h2>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link">INICIO</a> 
+                <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+                <a href="contacto.html" class="nav-link">CONTACTO</a>
+            </nav>
+        </header>
+
+    <h1 class="efecto-desplazamiento">50% OFF EN TODOS LOS PRODUCTOS</h1>
+
+    <div class="catalogo">
+        <!-- Productos: 1ra fila -->
+        <div class="producto">
+            <img src="lattafa-asad.jfif" alt="lattafa-asad" width="200" height="200">
+            <h3>Lataffa Asad</h3>
+            <p>Precio: $42.00</p>
+            <button onclick="agregarAlCarrito('Lataffa asad', 42)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="lataffa-yara.jfif" alt="lataffa-yara" width="200" height="200">
+            <h3>Latafa Yara</h3>
+            <p>Precio: $42.00</p>
+            <button onclick="agregarAlCarrito('Lataffa Yara', 42)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="latafa-khamrah.jfif" alt="latafa-khamrah" width="200" height="200">
+            <h3>Lataffa Kamrah</h3>
+            <p>Precio: $54.00</p>
+            <button onclick="agregarAlCarrito('Lataffa Kamrah', 54)">Agregar al carrito</button>
+        </div>
+
+        <!-- Productos: 2da fila -->
+        <div class="producto">
+            <img src="jean-paul-gluttier-scandal.jfif" alt="jean-paul-gluttier-scandal" width="200" height="200">
+            <h3>Jean Paul Gluttier Scandall</h3>
+            <p>Precio: $100.00</p>
+            <button onclick="agregarAlCarrito('Jean paul gluttier', 100)">Agregar al carrito</button> 
+        </div>
+
+        <div class="producto">
+            <img src="paco-rabanne-olympea.jfif" alt="paco-rabanne-olympea" width="200" height="200">
+            <h3>Paco Rabanne Olympea</h3>
+            <p>Precio: $106.00</p>
+            <button onclick="agregarAlCarrito('Paco Rabanne', 106)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="lataffa-qaed-al-fursan.jfif" alt="" width="200" height="200">
+            <h3>Lataffa Qaed Al Fursan  </h3>            
+            <p>Precio: $89.00</p>
+            <button onclick="agregarAlCarrito('Lataffa Qaed', 89)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <button id="carritoIcono">🛒 Carrito (0)</button>
+    <div id="carritoBarra" class="carrito-barra">
+        <h2>Carrito de Compras</h2>
+        <ul id="carritoLista"></ul>
+        <p id="carritoTotal">Total: $0.00</p>
+        <button id="cerrarCarrito">Cerrar</button>
+    </div>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="logo-miami.PNG" alt="Logo de la tienda">
+                <h2 class="calidad-garantizada">CALIDAD GARANTIZADA</h2>
+            </div>
+            <div class="formulario">
+                <form action="elias.lugones1@hotmail.com">
+                    <label></label>
+                    <input type="email" placeholder="Ingresa tu email">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

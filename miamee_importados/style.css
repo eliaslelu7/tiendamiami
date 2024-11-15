@@ -1,0 +1,242 @@
+/* Importando la fuente moderna Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #55cffb;
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+@keyframes desplazamientoIzquierdaDerecha {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla, a la izquierda */
+    }
+    50% {
+        transform: translateX(50%); /* Llega a la mitad de la pantalla */
+    }
+    100% {
+        transform: translateX(100%); /* Sale fuera de la pantalla, a la derecha */
+    }
+}
+
+.efecto-desplazamiento {
+    display: inline-block;
+    animation: desplazamientoIzquierdaDerecha 5s linear infinite; /* Duración de 5 segundos, animación continua */
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Estilos para el carrito en barra inferior */
+#carritoIcono {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 100;
+}
+
+.carrito-barra {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    border-top: 3px solid #007bff;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.carrito-barra h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#carritoLista {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 10px 0;
+}
+
+#carritoLista li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#carritoLista li span {
+    color: #333;
+}
+
+#carritoTotal {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#cerrarCarrito {
+    display: block;
+    width: 100%;
+    background-color: deeppink;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#cerrarCarrito:hover {
+    background-color: #0056b3;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: deeppink;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Añadir transición para un cambio suave */
+}
+
+header:hover {
+    background-color: #0056b3; /* Cambiar a un color diferente cuando se pase el mouse */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto {
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+
+}
+
+p {
+    color: black;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+button{
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.seccion-nosotros, .seccion-contacto {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+}
+
+footer {
+    background-color: deeppink;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario {
+    margin-left: auto;
+}
+
+.formulario input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+
